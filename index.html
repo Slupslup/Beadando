@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookies & Cakes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#434343"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li><a href="#">Főoldal</a></li>
+          <li><a href="terkep.html">Térkép</a></li>
+          <li><a href="galeria.html">Galéria</a></li>
+          <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+        <ul>
+          <li><a class="hide_nav" href="#">Főoldal</a></li>
+          <li><a class="hide_nav" href="terkep.html">Térkép</a></li>
+          <li><a class="hide_nav" href="galeria.html">Galéria</a></li>
+          <li>
+            <a class="hide_nav" href="kapcsolat.html">Kapcsolat</a>
+          </li>
+          <li onclick="showSidebar()">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#434343"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container0">
+        <div class="container">
+          <img src="kepek/cake_cropped.png" alt="" />
+          <div class="hero-text">
+            <h1>Édes pillanatok minden falatban!</h1>
+            <p>
+              Friss torták és sütemények minden alkalomra, kézműves minőségben.
+            </p>
+            <span class="click">Érdekel</span>
+          </div>
+        </div>
+        <div class="container2">
+          <h1 class="kiemelt_szoveg">Kiemelt Ajánlataink</h1>
+          <div class="cards" id="cards">
+            <div class="card">
+              <img src="kepek/cake_card.png" alt="" />
+              <div class="tartalom">
+                <h2>torta</h2>
+                <p>
+                  Fedezze fel a torták csodálatos világát, ahol minden falat egy
+                  újabb ínycsiklandó élményt kínál! Cukrászdánk tortáit a
+                  legfinomabb alapanyagok felhasználásával, aprólékos gonddal
+                  készítjük, hogy minden darab igazi mestermű legyen.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="kepek/Cookie_card3.png" alt="" />
+              <div class="tartalom">
+                <h2>Csokis Keksz</h2>
+                <p>
+                  Fedezze fel a ropogós és ellenállhatatlan kekszeinket, amelyek
+                  minden édesszájú kedvencévé válnak! Képzelje el a tökéletesen
+                  aranyszínűre sütött, omlós kekszeket, amelyek minden
+                  harapásnál elolvadnak a szájában.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="kepek/cupcake_card.png" alt="" />
+              <div class="tartalom">
+                <h2>Cupcake</h2>
+                <p>
+                  Fedezze fel mennyei cupcake-jeink varázsát, amelyek minden
+                  édesszájú álma! Képzelje el a tökéletesen puha, könnyű
+                  piskótát, amely minden harapásnál szinte elolvad a szájában.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="kepek/macaron_card.png" alt="" />
+              <div class="tartalom">
+                <h2>Macaron</h2>
+                <p>
+                  Fedezze fel a francia cukrászművészet csúcsát, a tökéletes
+                  macaronokat! Ezek az elegáns, színes aprósütemények minden
+                  falatban a luxust és a kifinomultságot testesítik meg.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="kepek/tartelette_card.png" alt="" />
+              <div class="tartalom">
+                <h2>Tartelette</h2>
+                <p>
+                  Fedezze fel a francia cukrászművészet egyik legbájosabb
+                  ékkövét, a tartelette-et! Ezek a kis méretű gyümölcsös
+                  kosárkák minden alkalmat különlegessé varázsolnak.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="kepek/pavlova_card.png" alt="" />
+              <div class="tartalom">
+                <h2>Pavlova</h2>
+                <p>
+                  Fedezze fel a pavlova könnyed és elbűvölő világát, amely
+                  minden édesszájú álmát valóra váltja! Ez a habcsók alapú
+                  sütemény kívül ropogós, belül pedig lágy és krémes, tökéletes
+                  harmóniát teremtve minden falatban.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="kepek/brownie_card.png" alt="" />
+              <div class="tartalom">
+                <h2>Brownie</h2>
+                <p>
+                  Fedezze fel a brownie ellenállhatatlan gazdagságát, amely
+                  minden csokoládérajongó kedvence! Ez a szaftos, csokoládés
+                  sütemény minden falatban tökéletes egyensúlyt teremt a gazdag
+                  íz és a puha textúra között.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="arrows">
+            <div class="scroll" id="left">
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#434343"
+              >
+                <path
+                  d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"
+                />
+              </svg>
+            </div>
+            <div class="scroll" id="right">
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#434343"
+              >
+                <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

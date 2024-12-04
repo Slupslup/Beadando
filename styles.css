@@ -1,0 +1,683 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+/* ----Nav---- */
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover {
+  background-color: #dfe2df;
+}
+nav li:first-child {
+  margin-right: auto;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar li:first-child {
+  margin-left: auto;
+}
+/*--Hero--*/
+.container0 {
+  display: flex;
+  flex-direction: column;
+  background-color: #dfe2df;
+}
+.container {
+  height: auto;
+  width: auto;
+  /*background-image: url("kepek/hatter2.jpg");*/
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.container img {
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  margin-right: auto;
+}
+.hero-text {
+  margin-top: auto;
+  width: 80%;
+  text-align: center;
+}
+.hero-text h1 {
+  font-size: 3.3rem;
+  margin-bottom: 20px;
+  color: #635456;
+}
+
+.hero-text p {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+.hide_nav {
+  display: none;
+}
+.click {
+  padding: 1em 2.1em 1.1em;
+  border-radius: 4px;
+  margin: 8px;
+  border: none;
+  background-color: #a99c7d;
+  color: black;
+  font-weight: 800;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0em -0.2em 0em #a99c7d inset;
+  transition: color 3s ease-in-out;
+}
+
+.click:hover {
+  background-color: transparent;
+  color: black;
+  border: 3px solid #a99c7d;
+  cursor: pointer;
+}
+/*Kiemelt Termékek*/
+.kiemelt_szoveg {
+  font-size: 3.3em;
+  padding-top: 20px;
+  text-align: center;
+  color: #100704;
+  margin: auto;
+}
+.container2 {
+  background-color: #a99c7d;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 100px;
+  box-shadow: inset 0px -1px 9px 0px;
+}
+.cards {
+  display: flex;
+  gap: 2em;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+.card {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  scroll-snap-align: start;
+  background-color: #dfe2df;
+  color: white;
+  text-align: center;
+  width: 450px;
+  height: auto;
+  color: #100704;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.card img {
+  margin: auto;
+  height: 66%;
+  width: 66%;
+  padding: 40px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+.card img:hover {
+  transform: scale(1.1);
+}
+.card .tartalom {
+  padding: 15px;
+  background-color: wheat;
+  height: 40%;
+  text-align: center;
+  border-radius: 12px;
+}
+.card .tartalom h2 {
+  text-transform: capitalize;
+  color: #120806;
+  margin-bottom: 10px;
+}
+.card .tartalom p {
+  line-height: 1.3;
+  color: #5c4d4a;
+}
+.arrows {
+  display: flex;
+  justify-content: center;
+}
+.scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 15px;
+}
+.scroll:hover {
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.05);
+}
+
+.arrow {
+  position: absolute;
+  margin: auto;
+}
+
+/*----Terkép oldal----*/
+.terkep_html {
+  background-color: #dfe2df;
+}
+/* Térkép konténer */
+.map-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#map {
+  position: relative;
+  width: 66%;
+  height: auto;
+  margin: auto;
+  border: 4px solid gray;
+  background-image: url("ocean.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#europe-map {
+  width: 80%;
+  height: auto;
+  margin-right: 100px;
+}
+
+.country {
+  fill: #ddd;
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
+
+.country:hover {
+  fill: #1976d2;
+}
+
+/* Sütemények megjelenítése */
+#dessert-info {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.dessert-item {
+  width: 200px;
+  padding: 20px;
+  background-color: #fff;
+  border: 8px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.dessert-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.dessert-item {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+/*Modal*/
+#mobile_close {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.modal_container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1100;
+}
+.modal {
+  background-color: #fff;
+  padding: 30px 50px;
+  border-radius: 5px;
+  max-height: 70%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.modal img {
+  margin: 10px;
+}
+.modal h1 {
+  margin: 0;
+}
+.modal p {
+  opacity: 0.7;
+}
+.modal_button {
+  display: none;
+}
+.modal_button:hover {
+  transform: scale(1.06);
+}
+/*Kiválaszott*/
+
+/*.chosen_div {
+}*/
+
+/* ----Galéria----*/
+
+.galeria_html {
+  display: flex;
+  flex-direction: column;
+  background-color: #dfe2df;
+}
+.galeria_container {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.galeria_container h1 {
+  margin-top: auto;
+  font-size: 3em;
+  text-align: center;
+  color: #100704;
+  order: 1;
+}
+.galeria_container h2 {
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  padding-left: 20px;
+  padding-right: 20px;
+  order: 3;
+  margin: auto 15px 15px 15px;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.galeria_container .slider {
+  width: 90%;
+  min-width: 300px;
+  margin: 60px auto;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6);
+  background-color: #100704;
+  padding: 20px;
+  border-radius: 10px;
+  order: 2;
+}
+.slick-slide {
+  margin: 0px 10px;
+}
+.slick-slide img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #333;
+}
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+.slick-active {
+  opacity: 0.5;
+}
+.slick-current {
+  opacity: 1;
+}
+.galeria img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*----Kapcsolat----*/
+.kapcs_html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.kapcs_body {
+  height: 100vh;
+  width: 100%;
+}
+.kapcs_container {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dfe2df;
+}
+.kapcs_section {
+  width: 90%;
+  max-height: 95%;
+  background-color: #fff;
+  padding: 20px 60px 40px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+.kapcs_container .kapcs_content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.kapcs_container .kapcs_content form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.kapcs_container .kapcs_content form .inside_left_side {
+  padding-right: 25%;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.kapcs_container .kapcs_content form .inside_right_side {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.kapcs_container .kapcs_content .left_side {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.kapcs_container .kapcs_content .left_side .text {
+  font-size: 0.5em;
+  color: grey;
+}
+.text ul {
+  margin-top: 15px;
+  list-style: none;
+}
+.kapcs_content .left_side .details {
+  margin: 14px;
+  text-align: center;
+}
+.kapcs_content .alcim {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+.kapcs_content .left_side .details svg {
+  margin-bottom: 10px;
+}
+
+.kapcs_container .kapcs_content .right_side {
+  width: 75%;
+  height: 100%;
+}
+.right_side .input_box {
+  height: 25px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right_side .input_box input,
+.right_side .input_box textarea {
+  height: 50%;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background-color: #ddd;
+  padding-top: 0;
+  padding-left: 15px;
+  resize: none;
+}
+.right_side .input_box textarea {
+  height: 50px;
+}
+.right_side .kapcs_button input {
+  font-size: 1.1em;
+  background-color: #ddd;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.right_side .kapcs_button input:hover {
+  background-color: rgb(234, 233, 233);
+}
+.inside_left_side {
+  font-size: 0.7em;
+}
+.inside_right_side {
+  font-size: 0.7em;
+}
+.inside_right_side .input_box input {
+  width: 70%;
+}
+/*Validálás*/
+label.error {
+  color: #fb3a3a;
+  margin-top: 10px;
+  font-size: 0.5em;
+}
+
+/* Tablet nézet */
+
+@media (min-width: 600px) {
+  .container {
+    margin-bottom: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .container img {
+    width: 80%;
+    height: auto;
+  }
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  .galeria_container h2 {
+    font-size: 1.1em;
+    order: 2;
+    margin: auto 30px 30px 30px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  .galeria_container .slider {
+    order: 3;
+  }
+}
+/*PC nézet*/
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 50px;
+    flex-direction: row;
+  }
+  .container img {
+    margin-right: auto;
+    height: auto;
+    width: 60%;
+  }
+  .hero-text {
+    width: 100%;
+    text-align: left;
+    margin: auto;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  .modal {
+    background-color: #fff;
+    padding: 30px 50px;
+    border-radius: 5px;
+    max-height: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .modal_button {
+    display: block;
+    margin: auto;
+    background-color: #47a386;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .slider {
+    min-width: 400px;
+  }
+  .galeria_container h1 {
+    margin-top: 20px;
+  }
+  .galeria_container h2 {
+    font-size: 1.3em;
+    order: 2;
+    margin: 20px 25% 20px 25%;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  .galeria_container .slider {
+    order: 3;
+  }
+  .kapcs_container {
+    width: auto;
+  }
+  .kapcs_container .kapcs_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .kapcs_container .kapcs_content .left_side {
+    flex-direction: column;
+  }
+  .kapcs_container .kapcs_content .left_side .text {
+    font-size: 1.1em;
+    color: grey;
+  }
+  .text ul {
+    margin-top: 15px;
+    list-style: none;
+  }
+  .kapcs_content .left_side .details {
+    margin: 14px;
+    text-align: center;
+  }
+  .kapcs_container .kapcs_content .right_side {
+    margin-left: 90px;
+  }
+  .kapcs_container .kapcs_content .right_side {
+    width: 75%;
+    height: 100%;
+  }
+  .kapcs_content .alcim {
+    font-size: 1.2em;
+  }
+  .right_side .input_box input,
+  .right_side .input_box textarea {
+    height: 100%;
+    margin-top: 0;
+  }
+  .inside_left_side {
+    font-size: 1em;
+  }
+  .inside_right_side {
+    font-size: 1em;
+  }
+  .right_side .input_box textarea {
+    height: 100px;
+  }
+  label.error {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .hide_nav {
+    display: flex;
+  }
+}

@@ -1,0 +1,19 @@
+BARANYI BALÁZS
+
+URL cím: https://slupslup.github.io/Beadando/
+
+Leírás:
+Az oldal egy képzeletbeli cukrászdának készült, lehet böngészni a legeladottabb termékek között(kiemelt termékek).
+Sajátossága, hogy Európa bármely országának a tradícionális süteményét meg lehet rendelni, ezt a térkp fülnél tehetjük meg, a rendeleést ledadását pedig a kapcsolat oldalon.
+
+Saját Js kód:
+A galeria.html fájlban található, segitségével a térképen rákattintott országnak megjelenik a jellegezetes süteménye.
+
+ Font típus:
+Roboto 
+(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">)
+Elérés: https://fonts.google.com/selection/embed
